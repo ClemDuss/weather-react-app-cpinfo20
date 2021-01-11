@@ -14,6 +14,7 @@ const App = () => {
 
     async function searchCity(city){
         const result = await fetch(`/api/weather?city=${city}`);
+        // const result = await fetch(`/api/weather/${city}`);
         const weatherData = await result.json();
         // console.log("WEATHER DATA:", weatherData);
         setDaily(weatherData.daily);
