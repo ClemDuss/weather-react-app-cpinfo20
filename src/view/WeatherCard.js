@@ -10,7 +10,7 @@ class WeatherCard extends React.Component{
         return(
             <div className="text-center my-5 border rounded py-2 bg-weather-card">
                 <h3>{getStringDate(this.props.dateValue)}</h3>
-                <img src={ weatherIconFolder + this.props.weather.icon.substr(0,2) + ".png"} alt="icon météo" width="100px"/>
+                <img src={ weatherIconFolder + this.props.weather.icon.substr(0,2) + ".svg"} alt="icon météo" width="100px" className="my-2"/>
                 <p>{firstLetterToUpper(this.props.weather.description)}</p>
                 <p>
                     <span className="bg-primary text-light rounded px-1 mr-1">
